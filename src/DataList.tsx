@@ -6,6 +6,8 @@ import { Box } from "@mui/material";
 const Container = styled.div`
   padding: 5rem;
   background-color: #fff;
+  height: 40rem;
+  overflow: scroll;
 `;
 const Div = styled.div`
   .table {
@@ -23,7 +25,9 @@ const DataList = () => {
   const { tableList } = useContext(AppContext);
   return (
     <>
+    
       <Container>
+      <h1 style={{textAlign:"center",fontSize:"4rem"}}>Data Table</h1>
         <Div>
           <Div className="table">
             <Item>
@@ -57,6 +61,7 @@ const DataList = () => {
               <Box sx={{ fontSize: "2rem", fontWeight: "500" }}>Pincode</Box>
             </Item>
           </Div>
+          <hr />
         </Div>
         {tableList
           ? tableList.map((Ele: any) => {

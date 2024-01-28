@@ -16,11 +16,11 @@ import DataList from "./DataList";
 
 const Container = styled.div`
   width: 100vw;
-  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  padding: 1rem;
 `;
 
 const Label = styled.label`
